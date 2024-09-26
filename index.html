@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Dream</a></li>
+                <li><a href="#">Message Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <h1>Welcome To My Website</h1>
+        <p>Ini adalah Website saya</p>
+        <img src="https://images.esquiremag.ph/esquiremagph/images/2023/08/04/IMG_3546%20(1).PNG" alt="Placeholder Image" class="image-placeholder">
+    </section>
+
+    <section class="headquarter-section">
+        <h2>My Dream</h2>
+        <div class="locations">
+            <div class="location">
+                <div class="circle" style="background-image: url('https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+                </div>
+                <p>Jalan-jalan</p>
+            </div>
+            <div class="location">
+                <div class="circle" style="background-image: url('https://plus.unsplash.com/premium_photo-1679397743946-ef0f12e366c6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+                </div>
+                <p>Duit</p>
+            </div>
+            <div class="location">
+                <div class="circle" style="background-image: url('https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+                </div>
+                <p>Turu</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <h2>Message Us</h2>
+        <form id="messageForm" class="form-container">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tglLahir">Tanggal Lahir</label>
+                <input type="date" id="tglLahir" name="tglLahir" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki-laki" name="gender" value="Laki-Laki" required>
+                    <label for="laki-laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
     
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    
+        <div class="display-box" id="displayBox">
+            <h3>Current time: <span id="currentTime"></span></h3>
+            <p><strong>Nama:</strong> <span id="displayNama"></span></p>
+            <p><strong>Tanggal Lahir:</strong> <span id="displayTglLahir"></span></p>
+            <p><strong>Jenis Kelamin:</strong> <span id="displayGender"></span></p>
+            <p><strong>Pesan:</strong> <span id="displayPesan"></span></p>
+        </div>
+    </section>
+    <footer>
+        <p>Created by Luthfi</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
